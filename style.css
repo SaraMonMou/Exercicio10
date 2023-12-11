@@ -1,20 +1,21 @@
 
-
 html, body{
     display: flex;
     justify-content: center;
-    
 }
 
 article {
     background-color: #F7F6F4;
     border-style: solid;
     border-color: #2A1848;
-    border width: 10px;
+    border-width: 10px;
     border-radius: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    max-width:500px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 330px;
 }
 
 header{
@@ -32,8 +33,13 @@ p{
     font-size: 1.2em;
     display: flex;
     justify-content: center;
+    margin: 0;
     font-weight: 800;
 } 
+
+p:nth-child(3){
+    padding-top: 30px;
+}
 
 p > span{
     color: #382457;
@@ -45,9 +51,10 @@ body > article > img{
     border-width: 10px;
     border-color: #2A1848;
     background-color: #FFF9EF;
-    max-width: 200px;
-    padding-left: 20px;
-    padding-right: 20px ;
+    padding-left: 50px;
+    padding-right: 50px; 
+    
+
     
    
 }
@@ -59,10 +66,27 @@ a > img{
     border-radius: 10px;
     
 }
+
 ul{
     display: flex;
     flex-direction: row; 
-    justify-content: space-between;
+    justify-content: space-around; 
     list-style: none;
-    padding: 0;
+    padding-right: 60px;
+    padding-left: 70px; 
+} 
+@media only screen and (min-width: 650px){
+    html{
+        background-color: red;
+    }
+
+    body{
+        
+    }
+
+
+
+
+
+
 }
